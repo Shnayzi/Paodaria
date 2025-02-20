@@ -12,45 +12,227 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="PAODARIA"
-        android:textSize="50dp" />
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Menu Principal"
+        android:textAllCaps="true"
+        android:textColor="#680D0D"
+        android:textSize="35dp"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_marginTop="50dp"
-        android:layout_height="250dp"
-        android:orientation="horizontal">
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:orientation="horizontal"
+        <androidx.cardview.widget.CardView
+            android:layout_width="200dp"
             android:layout_height="250dp"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="20dp"
+            android:id="@+id/menuPaes"
+            android:clickable="true"
+            android:focusable="true"
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="180dp"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginStart="30dp"
-                >
+                android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="180dp"
-
-                </ImageView>
+                    android:layout_width="170dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/pao" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="bottom"
-                    android:layout_marginStart="60dp"
-                    android:text="nui9phup" />
+                    android:layout_gravity="center_horizontal"
+                    android:text="Pães"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
 
-            </androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
-        </LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="20dp"
+            android:id="@+id/menuSalgados"
+            android:clickable="true"
+            android:focusable="true"
+            >
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
+                <ImageView
+                    android:layout_width="170dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/burger"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Salgados"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
 
     </LinearLayout>
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="20dp"
+            android:id="@+id/menuDoces"
+            android:clickable="true"
+            android:focusable="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="170dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/donut"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Doces"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="20dp"
+            android:id="@+id/menuBebidas"
+            android:clickable="true"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="170dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/suco"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Bebidas"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="20dp"
+            android:id="@+id/menuBolos"
+            android:clickable="true"
+            android:focusable="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="170dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/bolo"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Bolos"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:layout_margin="5dp"
+            app:cardCornerRadius="20dp"
+            android:id="@+id/menuPizzas"
+            android:clickable="true"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="170dp"
+                    android:layout_height="200dp"
+                    android:src="@drawable/pizza"
+                    android:layout_gravity="center_horizontal"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Pizzas"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
 </LinearLayout>

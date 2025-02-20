@@ -13,6 +13,24 @@
         android:theme="@style/Theme.Paodaria"
         tools:targetApi="31">
         <activity
+            android:name=".PizzaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BebidasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BolosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DocesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SalgadosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaesActivity"
+            android:exported="false" />
+        <activity
             android:name=".MenuActivity"
             android:exported="false" />
         <activity
